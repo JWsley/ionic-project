@@ -1,0 +1,40 @@
+
+ <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Receber Doações
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class = "conteudo animate__animated animate__fadeInLeft">
+    <img class = "img-item" src = "https://github.com/JWsley/ionic-project/blob/master/App_project/src/app/tab3/preciso-doacao.png?raw=true"
+    alt = "Imagem Solidariedade"/>
+
+  <p class = "texto-item">
+     Esta precisando de ajuda ? Podemos te ajudar ! Preencha os campos e fale com
+    um voluntário .
+  </p>
+  <form [formGroup]="form" (submit)="enviar()">
+    <ion-item>
+      <ion-label position="floating">Nome Completo</ion-label>
+      <ion-input type="text" formControlName="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Endereço</ion-label>
+      <ion-input type="text" formControlName="endereco"></ion-input>
+    </ion-item>
+    <ion-button
+      [disabled]="form.invalid || form.pending"
+      expand="block"
+      type="submit"
+      >Salvar</ion-button>
+  </form>
+</div>
+</ion-content>

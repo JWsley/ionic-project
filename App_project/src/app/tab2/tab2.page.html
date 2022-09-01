@@ -1,0 +1,48 @@
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo">
+       Doar
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen="true">
+  <div class="conteudo animate__animated animate__fadeInLeft">
+    <ion-card (click)="doarAlimentos()">
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img
+            src="https://drive.google.com/uc?id=1k8x39Z-ZJe52XMwrq0Cq0pRoz7lJIGN2"
+          />
+        </ion-thumbnail>
+        <ion-label>Alimentos</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card (click)="doarRoupas()">
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img
+            src="https://drive.google.com/uc?id=1ovHUF8bG83nxoANOL8XK_XfrQ6dEIKAO"
+          />
+        </ion-thumbnail>
+        <ion-label>Roupas</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card (click)="doarSangue()">
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img
+            src="https://drive.google.com/uc?id=1ITQqGoUFEsayCstLzDdyaJgcmEixdrcs"
+          />
+        </ion-thumbnail>
+        <ion-label>Sangue</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>

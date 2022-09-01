@@ -1,0 +1,44 @@
+
+
+ <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<div class="container">
+  <div class="conteudo animate__animated animate__fadeInLeft">
+    <img  class="img-item" src="https://drive.google.com/uc?id=16sL85fCiC5QVJsjgMPoWUTy374Wmlsny" alt="Banner">
+
+    <p>Existem pessoas prescisando muito da sua ajuda! Veja abaixo como ajudar 🙂​.</p>
+    <ion-card [routerLink]="['/tabs/tab2']"  >
+      <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="https://drive.google.com/uc?id=1beDxDVrPMw9F-liUF9y1Kyf7b0i_fko1
+            " alt="">
+          </ion-thumbnail>
+          <ion-label>Quero Doar</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card [routerLink] ="['/tabs/tab3']">
+      <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="https://drive.google.com/uc?id=1rAoVaWVzRzXbyFiKN33fnmov2XhCzagP" alt="">
+          </ion-thumbnail>
+          <ion-label>Preciso de doações</ion-label>
+      </ion-item>
+    </ion-card>
+
+
+  </div>
+
+</div>
+
+</ion-content>
